@@ -41,8 +41,6 @@ print("we're in")
 login = os.environ.get('CNBC_LOGIN')
 password = os.environ.get('CNBC_PASSWORD')
 
-print(login, password)
-
 time.sleep(.5)
 
 def sign_in_func(login, password):
