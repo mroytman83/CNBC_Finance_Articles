@@ -40,8 +40,8 @@ jobs:
         echo "Password: ${{ secrets.CNBC_PASSWORD }}"
         # Your API calls or other operations using the secrets here
       env:
-        API_USERNAME: ${{ secrets.CNBC_LOGIN }}
-        API_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
+        CNBC_LOGIN: ${{ secrets.CNBC_LOGIN }}
+        CNBC_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
 
     - name: Install dependencies
       run: |
