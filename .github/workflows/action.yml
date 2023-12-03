@@ -55,6 +55,7 @@ jobs:
         git config user.name "GitHub Actions Bot"
         git config user.email "<>"
         git add cnbc_data.json  # Replace with the actual file path
+        git add .gitignore
         TODAY_DATE=$(date +'%Y-%m-%d')
         git commit -m "Update cnbc_data.json - $TODAY_DATE"
         git push origin main  # Assuming you want to push to the master branch
