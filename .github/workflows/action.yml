@@ -50,6 +50,11 @@ jobs:
     - name: Run Python script
       run: python get_cnbc.py
 
+    - name: Debugging git changes
+      run: |
+        git status
+        git diff
+
     - name: Commit changes to cnbc_data.json
       run: |
         git config user.name "GitHub Actions Bot"
