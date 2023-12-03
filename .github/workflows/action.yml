@@ -35,13 +35,13 @@ jobs:
         sudo chmod +x /usr/bin/chromedriver
 
     - name: Use secrets in the script
-        run: |
-          echo "Username: ${{ secrets.CNBC_LOGIN}}"
-          echo "Password: ${{ secrets.CNBC_PASSWORD }}"
-          # Your API calls or other operations using the secrets here
-        env:
-          API_USERNAME: ${{ secrets.CNBC_LOGIN }}
-          API_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
+      run: |
+        echo "Username: ${{ secrets.CNBC_LOGIN}}"
+        echo "Password: ${{ secrets.CNBC_PASSWORD }}"
+        # Your API calls or other operations using the secrets here
+      env:
+        API_USERNAME: ${{ secrets.CNBC_LOGIN }}
+        API_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
 
     - name: Install dependencies
       run: |
