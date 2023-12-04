@@ -95,6 +95,9 @@ for each_item in find_elements:
 
         #get paragraphs
         text_elements= driver.find_elements(By.CSS_SELECTOR, 'p')
+
+        print(f"TE: {text_elements}")
+        
         news_set={item.text for item in text_elements}
 
         assert got_u not in news_set
