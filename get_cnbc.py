@@ -81,10 +81,14 @@ for each_item in find_elements:
         print(item.text)
         name=item.text
         url=item.get_attribute("href")
+
+        print("D1")
         
         #toggle the other tab, with the article url
         driver.switch_to.window(driver.window_handles[1])
         driver.get(url)
+
+        print("D2")
 
         #sign in and get article elements 
         sign_in_func(login, password)
@@ -93,10 +97,10 @@ for each_item in find_elements:
         formatted_datetime = dt.datetime.strptime(datetime_value, "%Y-%m-%dT%H:%M:%S%z")
         date=formatted_datetime.date().__str__()
 
+        print("D3")
+
         #get paragraphs
         text_elements= driver.find_elements(By.CSS_SELECTOR, 'p')
-
-        print(f"TE: {text_elements}")
         
         news_set={item.text for item in text_elements}
 
@@ -104,6 +108,7 @@ for each_item in find_elements:
         collection[name]=[date, news_set]
         print(len(collection))
         driver.switch_to.window(driver.window_handles[0])
+        
     except Exception as e:
         print(e)
         driver.switch_to.window(driver.window_handles[0])
