@@ -42,6 +42,7 @@ jobs:
       env:
         CNBC_LOGIN: ${{ secrets.CNBC_LOGIN }}
         CNBC_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
+        TEST: ${{ secrets.TEST }}
 
     - name: Install dependencies
       run: |
