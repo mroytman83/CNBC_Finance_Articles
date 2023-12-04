@@ -134,7 +134,11 @@ except FileNotFoundError:
 
 print(collection)
 
-existing_data.append(collection)
+try:
+    existing_data.extend(collection)
 
-with open(file_path, 'w') as json_file:
-    json.dump(existing_data, json_file, cls=SetEncoder)
+    with open(file_path, 'w') as json_file:
+        json.dump(existing_data, json_file, cls=SetEncoder)
+        
+except Exception as e:
+    print(e)
