@@ -101,7 +101,8 @@ for each_item in find_elements:
         collection[name]=[date, news_set]
         print(len(collection))
         driver.switch_to.window(driver.window_handles[0])
-    except:
+    except Exception as e:
+        print(e)
         driver.switch_to.window(driver.window_handles[0])
         continue
 
