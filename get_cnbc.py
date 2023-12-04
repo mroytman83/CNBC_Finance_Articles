@@ -114,6 +114,8 @@ try:
 except FileNotFoundError:
     existing_data = {}
 
+print(collection)
+
 existing_data.update(collection)
 
 with open(file_path, 'w') as json_file:
