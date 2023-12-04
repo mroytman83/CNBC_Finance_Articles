@@ -107,11 +107,13 @@ for each_item in find_elements:
 
         assert got_u not in news_set
         
+        text = '\n'.join(news_set)
+        
         data = {
             "title": name,
             "link": url,
             "date": date,
-            "text": news_set
+            "text": text
         }
         collection.append(data)
         
