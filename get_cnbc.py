@@ -73,6 +73,8 @@ find_elements=driver.find_elements(By.CLASS_NAME, "Card-titleContainer")
 #open a second tab, where the article will be scraped
 driver.execute_script("window.open('');")
 
+print(len(login))
+print(len(password))
 
 #go through new articles which were published this week
 for each_item in find_elements:
@@ -82,13 +84,9 @@ for each_item in find_elements:
         name=item.text
         url=item.get_attribute("href")
 
-        print("D1")
-        
         #toggle the other tab, with the article url
         driver.switch_to.window(driver.window_handles[1])
         driver.get(url)
-
-        print("D2")
 
         #sign in and get article elements 
         sign_in_func(login, password)
@@ -96,8 +94,6 @@ for each_item in find_elements:
         datetime_value = time_element.get_attribute('datetime')
         formatted_datetime = dt.datetime.strptime(datetime_value, "%Y-%m-%dT%H:%M:%S%z")
         date=formatted_datetime.date().__str__()
-
-        print("D3")
 
         #get paragraphs
         text_elements= driver.find_elements(By.CSS_SELECTOR, 'p')
