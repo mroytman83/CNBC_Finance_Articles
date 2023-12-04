@@ -34,22 +34,16 @@ jobs:
         sudo mv chromedriver /usr/bin/chromedriver
         sudo chmod +x /usr/bin/chromedriver
 
-    - name: Use secrets in the script
-      run: |
-        echo "Username: ${{ secrets.CNBC_LOGIN}}"
-        echo "Password: ${{ secrets.CNBC_PASSWORD }}"
-        # Your API calls or other operations using the secrets here
-      env:
-        CNBC_LOGIN: ${{ secrets.CNBC_LOGIN }}
-        CNBC_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
-        TEST: ${{ secrets.TEST }}
-
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
 
     - name: Run Python script
       run: python get_cnbc.py
+      env:
+        CNBC_LOGIN: ${{ secrets.CNBC_LOGIN }}
+        CNBC_PASSWORD: ${{ secrets.CNBC_PASSWORD }}
+        TEST: ${{ secrets.TEST }}
 
     - name: Debugging git changes
       run: |
