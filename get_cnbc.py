@@ -64,7 +64,7 @@ print("user verified, time to scrape")
 got_u = 'Despite a murky macroeconomic environment and heightened fears around the health of the banking sector, the nation’s largest financial institutions all reported earnings beats for the third quarter.'
 
 # nested dictionary with dates, and articles
-collection = {}
+collection = []
 
 load_more_button = driver.find_element(
     By.CLASS_NAME, "LoadMoreButton-loadMore")
@@ -106,7 +106,15 @@ for each_item in find_elements:
         news_set = {item.text for item in text_elements}
 
         assert got_u not in news_set
-        collection[name] = [date, news_set]
+        
+        data = {
+            "title": name,
+            "link": url,
+            "date": date,
+            "text": news_set
+        }
+        collection.append(data)
+        
         print(len(collection))
         driver.switch_to.window(driver.window_handles[0])
 
