@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/Cardinal-Trading-UW-Madison/CNBC-Finance-Artic
 
 ```
 
-#IMPORTANT LEGAL DISCLAIMER:
+IMPORTANT LEGAL DISCLAIMER:
 
 This repository is not affiliated with CNBC, Inc. The data comes from free/public news stories and is intended for research and educational purposes.
 
