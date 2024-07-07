@@ -1,4 +1,4 @@
-# CNBC Finance Articles
+# CNBC Finance Articles [ARCHIVED]
 
 ![:)](https://media.tenor.com/fLDZprJ5sXYAAAAC/jim-cramer-cnbc.gif)
 
