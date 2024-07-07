@@ -1,4 +1,4 @@
-# CNBC Finance Articles [ARCHIVED]
+# CNBC Finance Articles Fall 2023 [ARCHIVED]
 
 ![:)](https://media.tenor.com/fLDZprJ5sXYAAAAC/jim-cramer-cnbc.gif)
 
