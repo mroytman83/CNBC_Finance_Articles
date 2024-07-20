@@ -2,7 +2,7 @@
 
 ![:)](https://media.tenor.com/fLDZprJ5sXYAAAAC/jim-cramer-cnbc.gif)
 
-This repository contains a JSON file of over a thousand CNBC Finance Articles, which [Cardinal Trading UW Madison](https://cardinaltradinguw.com/) used for their proprietary sentiment analysis factor construction. The articles are from November 2023 to the present. 
+This repository contains a JSON file of over a thousand CNBC Finance Articles, which [Cardinal Trading UW Madison](https://cardinaltradinguw.com/) used for their proprietary sentiment analysis factor construction. The articles are from November 2023 to July 2024
 
 
 Just get the URL of the raw JSON, and viola 
