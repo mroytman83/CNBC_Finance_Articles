@@ -1,4 +1,4 @@
-# CNBC Finance Articles Fall 2023 [ARCHIVED]
+# CNBC Finance Article Data Pipeline
 
 ![:)](https://media.tenor.com/fLDZprJ5sXYAAAAC/jim-cramer-cnbc.gif)
 
@@ -7,7 +7,7 @@ This repository contains a JSON file of over a thousand CNBC Finance Articles, w
 
 Just get the URL of the raw JSON, and viola 
 ```
-https://raw.githubusercontent.com/Cardinal-Trading-UW-Madison/CNBC-Finance-Articles/main/cnbc_data.json
+https://raw.githubusercontent.com/mroytman83/CNBC_Data_Pipeline/main/cnbc_data.json
 
 ```
 
