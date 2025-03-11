@@ -1,4 +1,4 @@
-# CNBC Finance Article Data Pipeline
+# CNBC Finance Article Data Set
 
 ![:)](https://media.tenor.com/fLDZprJ5sXYAAAAC/jim-cramer-cnbc.gif)
 
