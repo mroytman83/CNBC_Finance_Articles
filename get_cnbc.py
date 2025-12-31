@@ -66,9 +66,8 @@ got_u = 'Despite a murky macroeconomic environment and heightened fears around t
 # nested dictionary with dates, and articles
 collection = []
 
-load_more_button = driver.find_element(
-    By.CLASS_NAME, "LoadMoreButton-loadMore")
-load_more_button.click()
+load_more_button = driver.find_element(By.CLASS_NAME, "LoadMoreButton-loadMore")
+driver.execute_script("arguments[0].click();", load_more_button)
 time.sleep(.5)
 
 find_elements = driver.find_elements(By.CLASS_NAME, "Card-titleContainer")
